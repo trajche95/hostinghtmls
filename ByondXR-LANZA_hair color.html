@@ -1,0 +1,76 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+</head>
+<script>
+(function (d,k) {
+var s = d.createElement('script');
+s.type = 'text/javascript';
+s.async = true;
+s.src = 'https://plugins-media.makeupar.com/c44509-dev/sdk.js?apiKey=' + k;
+var x = d.getElementsByTagName('script')[0];
+x.parentNode.insertBefore(s, x);
+})(document, 'Zs9d1WvzWN7Cgn0VSinUg');
+</script>
+<div id="YMK-module"></div>
+<script>
+
+ var yc_event_id;
+  window.ymkAsyncInit = function () {
+
+     window.YMK.init({
+
+    autoOpen: false,
+    // disableLiveMode: true,
+    enableFourWayLooks : true,
+    enableEmailSharing:true,
+    enableFBSharing:true,
+    enableTwitterSharing:true,
+    skinSmoothStrength: 50,
+    language: 'en',
+    height: 600,
+    width: 500
+
+    });
+
+    window.YMK.addEventListener('opened', function() {
+        document.body.appendChild(document.createTextNode('opened event triggered'));
+        document.body.appendChild(document.createElement('br'));
+
+    });
+
+    window.YMK.addEventListener('cameraFailed', function() {
+     document.body.appendChild(document.createTextNode('camera failed triggered'));
+     document.body.appendChild(document.createElement('br'));
+
+   });
+
+    window.YMK.addEventListener('loaded', function() {
+        document.body.appendChild(document.createTextNode('loaded event triggered'));
+        document.body.appendChild(document.createElement('br'));
+
+    });
+
+
+  }
+
+</script>
+<br/>
+
+<button onclick="YMK.open()">Open YouCam</button>
+<button onclick="YMK.close()">Close YouCam</button>
+<button onclick="YMK.closeEngine()">Back to Launcher</button>
+<button onclick="YMK.setIntensity(20)">Lower intensity of latest effect</button>
+<button onclick="YMK.disableCompare()">Disable Compare</button>
+<button onclick="YMK.enableCompare()">Enable Compare</button>
+<button onclick="YMK.reset()">Remove makeup effects</button>
+<button onclick="YMK.applyMakeupBySku('19295')">Apply Copper Red-6C</button> <!-- Change the SKU ID or GUID in the '' with the products available in the SKU mapping table -->
+<button onclick="YMK.applyMakeupBySku('19239')">Apply Vibrant Red-5RR</button> <!-- Change the SKU ID or GUID in the '' with the products available in the SKU mapping table -->
+<button onclick="YMK.applyMakeupBySku('19737')"> Apply Brown Charcoal - 6AX</button> <!-- Change the SKU ID or GUID in the '' with the products available in the SKU mapping table -->
+<button onclick="YMK.applyMakeupBySku('19277')">Apply Vampy Violet - 3V</button> <!-- Change the SKU ID or GUID in the '' with the products available in the SKU mapping table -->
+<button onclick="YMK.applyMakeupBySku('19279')">Apply Silver Satin - 7P</button> <!-- Change the SKU ID or GUID in the '' with the products available in the SKU mapping table -->
+<button onclick="YMK.applyMakeupBySku('19905')">Apply Vibes-Violet</button> <!-- Change the SKU ID or GUID in the '' with the products available in the SKU mapping table -->
+<button onclick="YMK.applyMakeupBySku('19901')">Apply Vibes-Magenta</button> <!-- Change the SKU ID or GUID in the '' with the products available in the SKU mapping table -->
+</body>
+</html>
